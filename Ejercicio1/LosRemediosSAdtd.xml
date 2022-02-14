@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"?>
+<!DOCTYPE concesionario SYSTEM "LosRemediosSA.dtd">
+<central>
+    <sucursal>
+        <codigo>S4562734</codigo>
+        <ubicacion>Ubrique</ubicacion>
+        <pedidos>
+            <nombreTrabajadorPedido>Pablo Benitez</nombreTrabajadorPedido>
+            <fecha>22/11/2021</fecha>
+            <Observaciones>Urgente</Observaciones>
+            <codpedido>3251</codpedido>
+            <articulos>
+                <codArticulo>DGT 6-1-2</codArticulo>
+                <unidades>6</unidades>
+                <precioUD>30</precioUD>
+                <Observaciones>Color Marron</Observaciones>
+                <revision>65</revision>
+            </articulos>
+        </pedidos>
+        <exposicion>
+            <codpedido>3251</codpedido>
+            <unidadesalmacenadas>45</unidadesalmacenadas>
+            <unidadesexpuestas>15</unidadesexpuestas>
+            <unidadesreservadas>3</unidadesreservadas>
+            <pvpud>67</pvpud>
+            <colores>marron, verde, rojo</colores>
+            <modelos>aladino, monedero</modelos>
+        </exposicion>
+        <gestion>
+            <facturapedido>3251</facturapedido>
+            <importe>240</importe>
+            <fecha>22/11/2021</fecha>
+        </gestion>
+    </sucursal>
+    <sucursal>
+        <codigo>S5678231</codigo>
+        <ubicacion>Lugo</ubicacion>
+        <pedidos>
+            <nombreTrabajadorPedido>Nerea Alvarez</nombreTrabajadorPedido>
+            <fecha>06/08/2021</fecha>
+            <Observaciones>Incompleto</Observaciones>
+            <codpedido>4434</codpedido>
+            <articulos>
+                <codArticulo>YUQ 4-4-9</codArticulo>
+                <unidades>6</unidades>
+                <precioUD>30</precioUD>
+                <Observaciones>Color Marron</Observaciones>
+                <revision>65</revision>
+            </articulos>
+        </pedidos>
+        <exposicion>
+            <codpedido>4434</codpedido>
+            <unidadesalmacenadas>45</unidadesalmacenadas>
+            <unidadesexpuestas>15</unidadesexpuestas>
+            <unidadesreservadas>3</unidadesreservadas>
+            <pvpud>67</pvpud>
+            <colores>marron, verde, amarillo</colores>
+            <modelos>aladino, monedero</modelos>
+        </exposicion>
+        <gestion>
+            <facturapedido>8875</facturapedido>
+            <importe>240</importe>
+            <fecha>06/08/2021</fecha>
+        </gestion>
+    </sucursal>
+</central>

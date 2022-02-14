@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="central">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="sucursal"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sucursal">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="codigo"/>
+        <xs:element ref="ubicacion"/>
+        <xs:element ref="pedidos"/>
+        <xs:element ref="exposicion"/>
+        <xs:element ref="gestion"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="codigo" type="xs:NCName"/>
+  <xs:element name="ubicacion" type="xs:NCName"/>
+  <xs:element name="pedidos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombreTrabajadorPedido"/>
+        <xs:element ref="fecha"/>
+        <xs:element ref="Observaciones"/>
+        <xs:element ref="codpedido"/>
+        <xs:element ref="articulos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombreTrabajadorPedido" type="xs:string"/>
+  <xs:element name="articulos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="codArticulo"/>
+        <xs:element ref="unidades"/>
+        <xs:element ref="precioUD"/>
+        <xs:element ref="Observaciones"/>
+        <xs:element ref="revision"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="codArticulo" type="xs:string"/>
+  <xs:element name="unidades" type="xs:integer"/>
+  <xs:element name="precioUD" type="xs:integer"/>
+  <xs:element name="revision" type="xs:integer"/>
+  <xs:element name="exposicion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="codpedido"/>
+        <xs:element ref="unidadesalmacenadas"/>
+        <xs:element ref="unidadesexpuestas"/>
+        <xs:element ref="unidadesreservadas"/>
+        <xs:element ref="pvpud"/>
+        <xs:element ref="colores"/>
+        <xs:element ref="modelos"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="unidadesalmacenadas" type="xs:integer"/>
+  <xs:element name="unidadesexpuestas" type="xs:integer"/>
+  <xs:element name="unidadesreservadas" type="xs:integer"/>
+  <xs:element name="pvpud" type="xs:integer"/>
+  <xs:element name="colores" type="xs:string"/>
+  <xs:element name="modelos" type="xs:string"/>
+  <xs:element name="gestion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="facturapedido"/>
+        <xs:element ref="importe"/>
+        <xs:element ref="fecha"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="facturapedido" type="xs:integer"/>
+  <xs:element name="importe" type="xs:integer"/>
+  <xs:element name="fecha" type="xs:string"/>
+  <xs:element name="Observaciones" type="xs:string"/>
+  <xs:element name="codpedido" type="xs:integer"/>
+</xs:schema>

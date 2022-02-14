@@ -1,0 +1,28 @@
+<!ELEMENT (central)*>
+<!ELEMENT central (sucursal)>
+<!ELEMENT sucursal (codigo, ubicacion, pedido*, exposicion*, gestion*)>
+<!ELEMENT codigo (#PCDATA)>
+<!ELEMENT ubicacion (#PCDATA)>
+<!ELEMENT pedido (nombreTrabajadorPedido, fecha, Observaciones, codpedido, articulos*)>
+<!ELEMENT nombreTrabajadorPedido (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
+<!ELEMENT Observaciones(#PCDATA)>
+<!ELEMENT codpedido (#PCDATA)>
+<!ELEMENT articulos (codArticulo, unidades, precioUD, Observaciones, revision)>
+<!ELEMENT codArticulo (#PCDATA)>
+<!ELEMENT unidades (#PCDATA)>
+<!ELEMENT precioUD (#PCDATA)>
+<!ELEMENT Observaciones (#PCDATA)>
+<!ELEMENT revision (#PCDATA)>
+<!ELEMENT exposicion (codpedido, unidadesalmacenadas, unidadesexpuestas, unidadesreservadas, pvpud, colores, modelos)>
+<!ELEMENT codpedido (#PCDATA)>
+<!ELEMENT unidadesalmacenadas (#PCDATA)>
+<!ELEMENT unidadesexpuestas (#PCDATA)>
+<!ELEMENT unidadesreservadas (#PCDATA)>
+<!ELEMENT pvpud (#PCDATA)>
+<!ELEMENT colores (#PCDATA)>
+<!ELEMENT modelos (#PCDATA)>
+<!ELEMENT gestion (facturapedido, importe, fecha)>
+<!ELEMENT facturapedido (#PCDATA)>
+<!ELEMENT importe (#PCDATA)>
+<!ELEMENT fecha (#PCDATA)>
